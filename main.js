@@ -43,7 +43,14 @@ resetting.addEventListener('click', () =>{
     reset();
 })
 function reset(){
-    window.location.reload();
+    let gridSize = prompt('Please input number of grids', '16')
+    gridSize = parseInt(gridSize);
+    if(gridSize > 16){
+        alert('please input a valid number 16!')
+    }else{
+        window.location.reload();
+        createGrid(gridSize);
+    }
     
    
     }
