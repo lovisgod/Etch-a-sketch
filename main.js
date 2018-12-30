@@ -8,6 +8,7 @@ const h = 960;
 
 // function that builds a grid in the "container"
 let grid;
+let contain2;
 
 createGrid(16)
 
@@ -37,20 +38,12 @@ function change(){
         })
 }
 
-// document.getElementById('refresh').addEventListener('click', reset());
 resetting.addEventListener('click', () =>{
     console.log('its working');
     reset();
 })
 function reset(){
-    let children = document.querySelector('body');
-    children.removeChild(children.childNodes[0]);
-    // let gridSize = prompt("please input the of grids", "16");
-    // if(gridSize> 16){
-    //     alert('Error! More than valid Number, grid should be lesser than or equal to 16');
-    // }else{
-    //     createGrid(gridSize);
-    // }
+    window.location.reload();
+    
    
     }
-  
